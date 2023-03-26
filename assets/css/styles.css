@@ -9,11 +9,43 @@
 body{
     font-size:1.6rem;
     font-family: "Poppins",sans-serif;
+    background: orange;
 }
 
 .container{
-    background: orange;
+    height: 100%;
     max-width: 720px;
+    padding: 50px 24px;
     margin-left: auto;
     margin-right:auto;
+}
+
+.tabs-title{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.tabs-title .tabs-title-item{
+    cursor: pointer;
+}
+
+.tabs-content{
+    margin-top: 28px;
+}
+
+.tabs-content .tabs-content-item{
+    display: none;
+}
+
+.tabs-content .tabs-content-item.active{
+    display: block;
+}
+
+.tabs-content-item .content-title{
+    font-size:2.4rem;
+}
+
+.tabs-content-item .content-desc{
+    text-align: justify;
 }
