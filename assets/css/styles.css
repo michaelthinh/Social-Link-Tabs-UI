@@ -9,7 +9,7 @@
 body{
     font-size:1.6rem;
     font-family: "Poppins",sans-serif;
-    background: orange;
+    background: #FFF;
 }
 
 .container{
@@ -23,11 +23,47 @@ body{
 .tabs-title{
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:space-around;
+    position: relative;
 }
 
 .tabs-title .tabs-title-item{
+    min-width: 150px;
+    padding: 10px 20px;
+    text-align: center;
+    color: #c23564;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 5px solid transparent;
+    opacity: 0.6;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tabs-title .line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #c23564;
+    transition: all 0.2s ease;
+}
+
+.tabs-title .tabs-title-item:hover{
+    opacity: 1;
+    background: #f9e6ec ;
+    border-bottom-color: #f8c6d6;
+}
+
+.tabs-title .tabs-title-item.active{
+    opacity: 1;
+}
+
+.tabs-title .tabs-title-item .tab-icon{
+    margin-right: 10px;
 }
 
 .tabs-content{
@@ -43,6 +79,7 @@ body{
 }
 
 .tabs-content-item .content-title{
+    color: #c23564;
     font-size:2.4rem;
 }
 
